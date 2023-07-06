@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class method {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int score=0;
+
+        System.out.println("Solve the Following Questions");
+        System.out.println("A. What is the capital of France?\n(1) Paris\n(2) London\n(3) Rome\n");
+        int ans1 = sc.nextInt();
+        System.out.println("B. What is the largest planet in our solar system?\n(1) Jupiter\n(2) Saturn\n(3) Earth\n");
+        int ans2 = sc.nextInt();
+        System.out.println("C. Who painted the Mona Lisa?\n(1) Leonardo da Vinci\n(2) Pablo Picasso\n(3) Vincent van Gogh\n");
+        int ans3 = sc.nextInt();
+
+        // Checking answers using if-else statements
+        if (ans1 == 1) {
+            System.out.println("A. Correct Answer");
+            score++;
+        } else {
+            System.out.println("A. Incorrect Answer");
+        }
+
+        if (ans2 == 1) {
+            System.out.println("B. Correct Answer");
+            score++;
+        } else {
+            System.out.println("B. Incorrect Answer");
+        }
+
+        if (ans3 == 1) {
+            System.out.println("C. Correct Answer");
+            score++;
+        } else {
+            System.out.println("C. Incorrect Answer");
+        }
+
+        System.out.println("You Correctly Solved "+score + "Questions");
+        sc.close();
+    }
+}
